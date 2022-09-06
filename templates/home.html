@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Website Tutorial</title>
+  </head>
+  <body>
+
+    {% extends "template.html" %}
+    {% block content %}
+<center>
+
+    <h1> My First Website </h1>
+    <p> Coding is fun </p>
+
+
+    <h1>Thank you for visiting my website!</h1><br>
+
+
+    <form action="greet" method="post"
+        {% for message in get_flashed_messages()%}
+            <p> {{message}} </p>
+        {% endfor %}
+        <br>
+        <input type="text" name="name_input">
+        <br>
+        <input type="submit" value="GREETING" id="greet">
+
+
+    </form>
+</center>
+
+    {% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "captain-admin-virtual-environment",
+  "version": "1.0.0",
+  "description": "My First Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisyt3718/chrisyt3718.github.io.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "Chris-Siu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisyt3718/chrisyt3718.github.io/issues"
+  },
+  "homepage": "https://github.com/chrisyt3718/chrisyt3718.github.io#readme"
+}
