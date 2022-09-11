@@ -1,4 +1,42 @@
 <!DOCTYPE html>
+<style>
+body {
+  display: grid;
+  grid-template-columns: auto 0px; 
+}
+
+.top {
+  --offset: 50px; 
+  
+  position: sticky;
+  bottom: 20px;      
+  margin-right:10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  white-space: nowrap;
+  margin-right: 30px;
+  margin-bottom: 70px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/* remove the below if you don't want smooth scrolling */
+html,
+body {
+  scroll-behavior: smooth;
+}
+</style>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +47,8 @@
 
 </head>
 <body>
-  
+  <div>
+	 <!-- your content goes here  -->
   <div class="container">
   <div class="heading">
 
@@ -19,7 +58,7 @@
 
   <div class="full-img" id="fullImgBox">
     <img src="1.jpg" id="fullImg">
-    <span onclick="closeFullImg()"><button>Exit</button></span>
+    <span onclick="closeFullImg()"><font-size: 30px>X</font></span>
   </div>
 
 <div class="img-gallery">
@@ -93,6 +132,8 @@
     }
 </style>
 
+</div>
+  <a href="#" class="top">Back to Top &#8593;</a>
 <footer>
     <p class="copyright">© TECHSIULUTIONS 2022</p>
 </footer>
