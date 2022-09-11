@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Guess a Number Game</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+    {% block content %}
+   <center><form>
+ <input type="button class=tweet-button" value="Go back!" id="greet" onclick="history.back()">
+</form><h1>Can you guess a number between 1 - 30? </h1>
+    <p class="answer">{{ answer }}</p>
+  <form action='/guess' method='post'>
+      Good Luck: <input type='text' name='guess'>
+      <input type='submit' value='SUBMIT' id="greet">
+  </form>
+</center>
+	{% endblock %}
+	
+</body>
+</html>
