@@ -32,6 +32,10 @@ def techsiulutions():
 def photos():
     return render_template("photos.html")
 
+@views.route('/tutorials')
+def tutorials():
+    return render_template("tutorials.html")
+
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
     note = json.loads(request.data)
