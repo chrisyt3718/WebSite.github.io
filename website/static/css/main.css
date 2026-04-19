@@ -806,7 +806,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background: transparent;
 	color: #313131;
 }
-
+.force-left {
+    float: left !important;
+    clear: both;
+}
 /**
  * line definition style
  */
